@@ -1,0 +1,23 @@
+.card {
+    margin: 1rem 2rem 2rem 2rem;
+    background-color: #e1f4f3;
+    font-size: 20px;
+    text-align: center;
+}
+
+.task-container {
+    display: flex;
+}
+
+.task-container label {
+    align-self: center;
+    margin-left: 20px;
+}
+
+[type="checkbox"]+span:not(.lever) {
+    height: 14px;
+}
+
+.pagination li.active {
+    background-color: #26a69a;
+}
