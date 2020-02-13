@@ -1,0 +1,84 @@
+/* .add-post input {
+    height: 70px;
+    background-color: #72b5b7;
+    color: #fff;
+    margin: 0 20px;
+    border: 0;
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 0px 20px;
+    width: 500px; */
+
+
+/* } */
+
+@media only screen and (max-width: 600px) {
+    /* .add-post input {
+        width: 100%
+    } */
+}
+
+.add-post input:focus,
+.add-post button:focus {
+    outline: none;
+}
+
+
+/* .add-post button {
+    background-color: #3498db;
+    color: #fff;
+    height: 70px;
+    width: 100px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+} */
+
+.post-form {
+    /* display: flex;
+    justify-content: center; */
+    margin: 20px 30px;
+}
+
+
+/* The alert message box */
+
+.alert {
+    padding: 20px;
+    margin: 20px 30px;
+    background-color: #7dcf9d;
+    /* Red */
+    color: white;
+    margin-bottom: 15px;
+    border: 1px solid green;
+}
+
+
+/* The close button */
+
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+/* When moving the mouse over the close button */
+
+.closebtn:hover {
+    color: black;
+}
+
+.ladda-spinner {
+    position: absolute;
+    top: 27px;
+    left: 43px;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}

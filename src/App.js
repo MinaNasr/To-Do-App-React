@@ -16,7 +16,7 @@ export default class App extends React.Component{
         return ( 
             <BrowserRouter>
                 <Navbar/>
-                <div className = "App" >
+                <div className = "App z-depth-1" >
                     <Route exact path="/" component={Tasks}/>
                    
                     <Route path="/posts" component={Posts}/>

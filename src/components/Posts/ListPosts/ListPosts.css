@@ -1,0 +1,7 @@
+.card p {
+    text-align: justify;
+}
+
+.card .card-title {
+    font-weight: 500;
+}

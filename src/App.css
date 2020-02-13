@@ -52,7 +52,7 @@ body {
     left: 50%;
     /* top:50%; */
     transform: translateX(-50%);
-    margin-top: 100px;
+    margin: 100px auto;
 }
 
 @media screen and (max-width: 450px) {

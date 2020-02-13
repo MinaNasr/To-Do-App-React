@@ -1,7 +1,8 @@
 import React , {Component} from 'react';
 import axios from 'axios';
 import Pagination from '../shared/Pagination/Pagination';
-import ListPosts from '../ListPosts/ListPosts';
+import ListPosts from './ListPosts/ListPosts';
+import AddPost from './AddPost/AddPost';
 export default class Posts extends Component {
     state = {
         posts: [],
@@ -10,7 +11,6 @@ export default class Posts extends Component {
     }
     componentDidMount(){
         axios.get('https://jsonplaceholder.typicode.com/posts').then(res=>{
-            console.log('res: ', res);
             if (res.data.length) {
                 this.setState({
                     posts: res.data
@@ -25,14 +25,11 @@ export default class Posts extends Component {
     }
 
     nextPage = (Pages)=>{
-        console.log('pages: ', Pages)
-        console.log('pages: ', this.state.currentPage)
         if(this.state.currentPage < Pages){
             this.setState({
                 currentPage: this.state.currentPage + 1
             })
         }
-        console.log('stattttt: ' ,this.state)
     }
 
     previousPage = ()=>{
@@ -48,6 +45,8 @@ export default class Posts extends Component {
         const currentPosts = this.state.posts.slice(firstPostIndex,lastPostIndex)
         return(
             <div>
+                <AddPost/>
+                <h2>Your posts</h2>
                 <ListPosts posts = {currentPosts}/>
                 <Pagination itemsPerPage={this.state.postsPerPage} 
                             totalItems={this.state.posts.length} 
